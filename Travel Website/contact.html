@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Travel About Page</title>
+<link href="css/styles.css"
+type="text/css" rel="stylesheet">
+    
+<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    
+</head>
+
+
+<body class="contact">
+
+
+
+<header>  
+<div class="inner-header">
+<a href="index.html">
+<img id="logo" src="images/adventure-logo.png" alt="logo">   
+</a>
+
+<ul id="social">
+<li> <a href="">
+<img src="images/fb.jpg" alt="facebook">
+</a>
+</li>
+
+<li> <a href="">
+<img src="images/twitter.png" alt="twitter">
+</a>
+</li>
+
+<li> <a href="">
+<img src="images/instagram.png" alt="instagram">
+</a>
+</li>  
+</ul>
+
+</div> <!--close inner header-->
+
+
+<nav  id="primary">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="about.html">About</a></li>
+<li><a href="#">Tours</a>
+<ul class="drop-down">
+<li><a href="overview.html">Overview</a></li>
+<li><a href="washington.html">Washington</a></li>
+<li><a href="oregon.html">Oregon</a></li>
+<li><a href="california.html">California</a></li>
+<li><a href="alaska.html">Alaska</a></li>
+</ul>
+</li>
+<li><a href="promos.html">Promos</a></li>
+<li><a href="contact.html">Contact</a></li>
+
+
+</ul>
+</nav>
+</header>
+
+<div id="wrapper"> 
+
+
+
+
+<main>
+    <h1>Get Special Offers and Updates from Great Adventures</h1>
+<form action="formhandler.php" method="post">
+  <fieldset>
+      <label>Name</label>
+      <input type="text" name="name">
+      <label>Email</label>
+      <input type="email" name="email">
+       <span> <?php echo $nameErr; ?></span> 
+      
+      <label>Gender</label>
+      <ul>
+      <li><input type="radio" name="gender" value="female">Female</li>
+      <li><input type="radio" name="gender" value="male">Male</li>
+      <li><input type="radio" name="gender" value="male">Other</li>
+      </ul>
+       <span> <?php echo $genderErr; ?></span> 
+          
+    <label>Places You Would like To Visit:</label>
+      <ul>
+        <li><input type="checkbox" name="places[]" value="washington">Washington</li>  
+        <li><input type="checkbox" name="places[]" value="oregon">Oregon</li>   
+        <li><input type="checkbox" name="places[]" value="california">California</li>
+        <li><input type="checkbox" name="places[]" value="alaska">Alaska</li>
+       </ul>    
+            <span> <?php echo $regionsErr; ?></span> 
+           
+       <label>How Did You Discover Great Adventures?</label>    
+         <select name="feedback">
+             
+        <option value="NULL">Select One</option>
+        <option value="socialmedia">Social Media</option>
+        <option value="google">Google/Search Engine</option>
+        <option value="friend">Through a friend</option>
+        <option value="Olga">From Olga</option>
+             
+        </select>  
+      
+       <span> <?php echo $feedbackErr; ?></span> 
+
+        <label>Comments</label>
+        <textarea name="comments"></textarea>
+        <span> <?php echo $commentsErr; ?></span>     
+        <input type="submit" name="submit" value="Submit">
+    
+    
+    </fieldset>  
+    </form>
+    
+     
+    </main>
+
+    <aside>
+    <h3>Our Contact Info</h3>
+    
+         <p>We are doing the best we can getting back to our backpacking friends! Feel free to reach out to us: </p>
+         
+    <p>Email: <a href="mailto:greatadventures@email.com">greatadventures@email.com</a> </p>
+    
+    <p>Phone: <a href="tel:555-555-5555">555-555-5555</a></p>
+ 
+    </aside>
+
+<footer>
+<ul>
+<li>Copyright &copy; 2020</li>
+<li>All Rights Reserved</li>
+<li><a href="">Terms of use</a></li>
+<li><a href="">Web Design by Jordan</a></li>
+
+
+</ul>
+</footer> 
+
+
+</div> <!--end of wrapper-->
+</body>
+</html>

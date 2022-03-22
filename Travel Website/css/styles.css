@@ -1,0 +1,402 @@
+
+/* Styles for my travel webstie */
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body {
+    background:#fff;
+}
+
+
+
+#wrapper {
+    width:940px;
+    margin:140px auto 0 auto;
+} 
+
+header {
+    position:fixed;
+    /* overflow:hidden; */
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color:beige;
+    /* Do not forget: Overflow hidden will cut your content */
+}
+
+
+#banner {
+    background:red;
+
+}
+
+.inner-header {
+    width:940px;
+    margin: 0 auto;
+}
+
+#logo {
+    float:left;
+    margin:20px 0;
+}
+
+
+#social {
+    float:right;
+}
+
+#social li {
+    float:left;
+    list-style-type: none;
+    margin-left:15px;
+    width:35px;
+}
+
+#primary {
+    height:50px;
+    background:#a36926;
+    clear:both;
+    line-height:50px;
+}
+
+#primary > ul {
+    width: 1000px;
+    margin: 0 auto;
+}
+
+#primary ul li {
+    float:left;
+    list-style-type:none;
+    width: 20%;
+    text-align:center;
+    position: relative;
+}
+
+#primary a {
+    text-decoration: none;
+    display: block;
+    color: #eceef4;
+    
+}
+
+#primary a:hover {
+    background: #000066;
+        color: #fff;
+}
+
+#primary li:hover .drop-down {
+    display:block;
+    position:absolute;
+    top:50px;
+    left:0;
+    z-index:1;
+    background:#b4bc64;
+    width:100%;
+}
+
+
+#primary li:hover .drop-down li {
+   float:none;
+    width:100%;
+}
+
+
+.drop-down {
+    display:none;
+}
+
+.drop-down2 {
+    display:none;
+}
+
+
+#secondary li {
+    list-style-type:none;
+    height:30px;
+    line-height:30px;
+    position:relative;
+}
+
+#secondary ul li:hover .drop-down2 {
+    display:block;
+    position:absolute;
+    top:0;
+    left:145px;
+    z-index:1;
+    background:#b4bc64;
+    width:100%;
+    
+}
+
+
+#secondary {
+    width:160px;
+    float:left;
+    height:300px;
+}
+
+#secondary ul {
+    background:#a36926;
+}
+
+#secondary a {
+    text-decoration:none;
+    color:#eceef4;
+    display:block;
+    padding-left:15px;
+}
+
+#secondary a:hover {
+    background:#b4bc64;
+    color:#000099;
+}
+
+
+.container {
+    float:right;
+    width:760px;
+    background:#fff;
+   
+}
+
+.row {
+    
+    margin-bottom: 20px;
+   /* border-bottom: 10px solid green; */
+    overflow: hidden;
+}
+
+
+.about-bullets {
+    font-family: 'Open Sans', sans-serif;
+    margin: 20px 0 50px;
+}
+
+main {
+    width:580px;
+    float:left;
+    background:#fff;;
+}
+
+
+aside {
+    width:340px;
+    float:right;
+    background:#fff;;
+}
+
+.about.inner aside p {
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.tours main {
+    width:480px;
+}
+
+.tours aside {
+    width:260px;
+}
+
+
+.tours p {
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+
+
+main p {
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+
+.third {
+    width:300px;  
+    float:left;
+    margin-top:16px;
+    margin-right:20px;
+    text-align: center;
+    padding: 0 10px;
+
+}
+
+.third:last-of-type {
+    margin-right:0;
+}
+
+h1{
+    margin-top:10px;
+    margin-bottom:5px;
+}
+
+footer {
+    height:50px;
+    clear:both;
+    line-height: 50px;
+    border-top: 1px dotted navy;
+}
+
+footer ul {
+    float: right;
+}
+
+footer li {
+    float:left;
+    list-style-type: none;
+    margin-left:20px;
+}
+
+
+
+
+ img{
+    max-width:100%;
+    display:block;
+    margin-bottom:10px;
+}
+
+
+.tours img {
+    float:left;
+    margin-bottom:10px;
+}
+
+
+
+.promos-inner video {
+    float:left;
+    margin-bottom:20px;
+}
+
+
+h1, h2, h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    color:#ed8b33;
+}
+
+
+p, figcaption, footer {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    margin-bottom: 30px;
+    
+}
+
+a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+}
+
+#promo-tee {
+    float: left;
+    display: inline;
+}
+
+main p {
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 32px;
+    line-height: 2em;
+}
+
+h2 {
+    font-size: 26px;
+    line-height: 1.5em;
+    
+}
+
+h3 {
+    font-size: 18px;
+    line-height: 1.125em;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+
+figcaption {
+    font-size: 12px; 
+}
+
+footer, footer a {
+    font-size: 10px;
+}
+
+aside p {
+    font-size: 14px;
+    margin-bottom: 10px;
+    
+}
+
+
+
+/***my form styles are below***/
+
+form {
+    max-width:580px;
+    margin-bottom:50px;
+    
+    
+}
+
+fieldset {
+    padding:30px;
+    border-radius: 25px;
+    background:#fff;
+    
+}
+
+label {
+    display:block;
+    margin-bottom:5px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+input[type=text],
+input[type=email] {
+    width:90%;
+    height:30px;
+    margin-bottom:20px;
+    font-size:.85em;
+}
+
+input[type=radio],
+input[type=checkbox]{
+    margin-right:4px;
+}
+
+form ul {
+    margin-left:10px;
+    margin-bottom: 30px;
+}
+
+form li {
+    list-style-type:none;
+    line-height:1.3;
+    font-size:.90em;
+}
+
+
+select {
+    margin-bottom:30px;
+}
+
+
+textarea {
+    width:90%;
+    height:100px;
+    resize: none;
+    margin-bottom:10px;
+}
